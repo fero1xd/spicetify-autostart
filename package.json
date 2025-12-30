@@ -1,0 +1,24 @@
+{
+  "name": "spicetify-autostart",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun -b tsdown",
+    "pkg-install": "bun run build && cp build/my.mjs ~/.config/spicetify/Extensions/spicetify-autostart.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.7",
+    "react": "^19.2.3",
+    "tsdown": "^0.18.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.94.0",
+    "axios": "^1.13.2",
+    "effect": "^3.19.13"
+  }
+}
