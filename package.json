@@ -4,8 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "bun -b tsdown",
-    "pkg-install": "bun run build && cp build/my.mjs ~/.config/spicetify/Extensions/spicetify-autostart.js"
+    "build": "bun -b tsdown"
   },
   "devDependencies": {
     "@types/bun": "latest",
